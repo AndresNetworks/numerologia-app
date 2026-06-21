@@ -21,12 +21,7 @@
     .page{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:2rem 1.5rem 4rem}
     .container{width:100%;max-width:580px}
 
-    /* MODO PRUEBA */
-    .test-bar{background:rgba(240,192,64,.12);border:1px solid rgba(240,192,64,.3);border-radius:8px;padding:8px 14px;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
-    .test-label{font-size:11px;color:var(--gold);letter-spacing:1px}
-    .btn-test{background:rgba(240,192,64,.2);border:1px solid var(--gold);border-radius:6px;padding:5px 12px;color:var(--gold);font-size:11px;font-weight:700;cursor:pointer;letter-spacing:.5px;transition:background .2s}
-    .btn-test:hover{background:rgba(240,192,64,.35)}
-
+    
     /* BANNER */
     .discount-banner{background:linear-gradient(135deg,#7c2d2d,#a83030);border-radius:10px;padding:10px 16px;margin-bottom:1.2rem;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
     .discount-text{font-size:13px;color:#ffd6d6}
@@ -239,12 +234,6 @@
 <div class="page">
 <div class="container">
 
-  <!-- MODO PRUEBA -->
-  <div class="test-bar" id="test-bar">
-    <span class="test-label">🧪 MODO PRUEBA — Solo tú ves esto</span>
-    <button class="btn-test" onclick="simularPago()">✓ Simular pago aprobado</button>
-  </div>
-
   <!-- BANNER DESCUENTO -->
   <div class="discount-banner">
     <div>
@@ -379,7 +368,6 @@
   </div>
 
 </div>
-<div class="footer">✦ &nbsp;numerología con inteligencia artificial&nbsp; ✦</div>
 </div>
 
 <script src="https://www.paypal.com/sdk/js?client-id=Abetu4SOnqGlDHWS4GVprsuUe0jNHypPV0Vk8TOgTzM5XT9iJLbtntjA-WNUP-pYYdRW3qytDlDfnhzs&currency=USD"></script>
@@ -582,7 +570,7 @@ Instrucciones:
 - Usa el nombre ${primerNombre} de forma personal a lo largo del texto
 - Sé muy específico a los números, no genérico
 - Tono: sabio, cálido, revelador, como una guía espiritual de confianza
-- Incluye orientaciones prácticas para el año ${anioActual}`;
+- Para la sección [AÑO PERSONAL ${anioActual}]: evita lenguaje técnico o esotérico complicado. Habla en tono cercano y motivador, como una amiga sabia dando consejos de vida. En vez de explicar la teoría del ciclo numerológico, dile a ${primerNombre} 3-4 acciones concretas y sencillas que puede empezar a hacer esta semana o este mes (ej: "anímate a iniciar esa conversación pendiente", "este es buen momento para retomar ese proyecto que dejaste pausado"). El objetivo es que termine de leer con ganas de actuar, no con más preguntas. Cierra esa sección con una frase corta y energizante que la impulse a moverse hoy mismo.`;
 
   const msgs=['Los astros están alineando tu lectura...','Calculando tus ciclos personales...','Descifrando tu número del alma...','Tejiendo tu misión de vida...','Casi listo, los números hablan...'];
   let mi=0;
